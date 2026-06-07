@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom'
 import Navbar from './Navbar'
 import ScrollProgress from './ScrollProgress'
 import Hero from './Hero'
@@ -9,7 +10,7 @@ import CTA, { Footer } from './CTA'
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <ScrollProgress />
       <Navbar />
       <main>
@@ -21,6 +22,6 @@ export default function App() {
         <CTA />
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
